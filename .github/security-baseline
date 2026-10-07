@@ -1,0 +1,4 @@
+# Security scan baseline (keel-linux/.github, security-scan.yml): findings
+# that were read and are not a risk, one per line, the fingerprint and why.
+shellcheck:SC2046:overlay/usr/local/sbin/tkldev-squid-refresh:75b6d212d184 shell lint, not a security risk: unquoted command substitution over values the script itself produces
+shellcheck:SC2061:overlay/usr/local/sbin/tkldev-squid-refresh:acf806da4ae7 shell lint, not a security risk: unquoted -name pattern to find, a correctness defect
